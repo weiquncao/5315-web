@@ -11,6 +11,7 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Department</th>
                 <th>Designation</th>
                 <th>Office</th>
                 <th>Extension</th>
@@ -21,6 +22,7 @@
         <tfoot>
             <tr>
                 <th>Name</th>
+                <th>Department</th>
                 <th>Designation</th>
                 <th>Office</th>
                 <th>Extension</th>
@@ -33,7 +35,7 @@
     <!-- load jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- load datatables js library -->
-    <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="http://138.68.233.172/jsontable.html"></script>
     
     <script type="text/javascript">
     $(document).ready(function() {
@@ -41,6 +43,7 @@
             "ajax": "empdata.js",
             "columns": [
                 {"data": "name"},
+                {"data": "department"}
                 {"data": "designation"},
                 {"data": "office"},
                 {"data": "extension"},
